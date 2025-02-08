@@ -3,10 +3,10 @@ export default {
     theme: {
       extend: {
         colors:{
-          primary: '#',
-          secondary: '#',
-          background: '#',
-          darkBackground: '#',
+          primary: '#FF5733',
+          secondary: '#33C1FF',
+          background: '#F4F4F4',
+          darkBackground: '#1A1A1A',
           text: '#000000',
           darkText: '#FFFFFF'
         },
