@@ -1,23 +1,28 @@
 import { Menu, X } from "lucide-react";
 import * as React from "react";
 import { useState } from "react"
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../contexts/ThemeContext";
+import { LanguageToggle } from "./LanguageToggle";
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "../lib/utils";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-export const menuItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Resume", href: "#resume" },
-  { label: "Blogs", href: "#blogs" },
+export const getMenuItems = (t: (key: string) => string) => [
+  { label: t("nav.home"), href: "#home" },
+  { label: t("nav.about"), href: "#about" },
+  { label: t("nav.experience"), href: "#experience" },
+  { label: t("nav.projects"), href: "#projects" },
+  { label: t("nav.resume"), href: "#resume" },
+  { label: t("nav.blogs"), href: "#blogs" },
 ];
 
 export function Header() {
+  const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState<string>("home");
+
+  const menuItems = getMenuItems(t);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -98,11 +103,15 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <ThemeToggle />
+          <div className="flex items-center space-x-2">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
         </nav>
 
         {/* Mobile Menu Toggle */}
         <div className="flex items-center md:hidden">
+          <LanguageToggle />
           <ThemeToggle />
           <button
             onClick={toggleMobileMenu}

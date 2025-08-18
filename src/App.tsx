@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { ThemeProvider } from './context/ThemeContext'
+import { ThemeProvider } from './contexts/ThemeContext'
 import './App.css'
 import Index from './pages/Index'
 import NotFound from './pages/NotFound'

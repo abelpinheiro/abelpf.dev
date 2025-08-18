@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ProjectCardProps {
   title: string;
@@ -38,46 +39,47 @@ function ProjectCard({ title, description, tags, imageUrl }: ProjectCardProps) {
 }
 
 export default function ProjectsSection() {
+  const { t } = useLanguage();
   const projects = [
     {
-      title: "KnowledgeQuiz",
-      description: "A full-featured quiz system where users can manage new quizes in the web and play them on an app.",
+      titleKey: "project.knowledgequiz.title",
+      descriptionKey: "project.knowledgequiz.description",
       tags: ["Android", "Kotlin", "C#", ".NET", "PostgreSQL", "React"],
       imageUrl: "https://placehold.co/600x340",
     },
     {
-      title: "Robotics 101 - Path Planning",
-      description: "An interactive website to show the different algorithms and strategies of Path Planning in robotics.",
+      titleKey: "project.robotics101.title",
+      descriptionKey: "project.robotics101.description",
       tags: [".NET", "C#"],
       imageUrl: "https://placehold.co/600x340",
     },
     {
-      title: "DIP/CV 101 - Online Photoshop",
-      description: "An interactive website showcasing algorithms of Digital Image Processing and Computer Vision.",
+      titleKey: "project.onlinephotoshop.title",
+      descriptionKey: "project.onlinephotoshop.description  ",
       tags: [".NET", "React", "Python"],
       imageUrl: "https://placehold.co/600x340",
     },
     {
-      title: "Remote Mouse Control",
-      description: "A desktop application and an Android app that will allow the smartphone to connect to the computer and act as a mouse remotely",
+      titleKey: "project.remotemousecontrol.title",
+      descriptionKey: "project.remotemousecontrol.description",
       tags: [".NET", "Android", "Kotlin", "WebSocket"],
       imageUrl: "https://placehold.co/600x340",
     },
     {
-      title: "Tracking Library System",
-      description: "An Android app where the user can create its own collection libraries (games, books) and manage them.",
+      titleKey: "project.trackinglibrary.title",
+      descriptionKey: "project.trackinglibrary.description",
       tags: ["Android", "Kotlin"],
       imageUrl: "https://placehold.co/600x340",
     },
     {
-      title: "Space Invaders Game",
-      description: "A clone of Space Invaders",
+      titleKey: "project.spaceinvaders.title",
+      descriptionKey: "project.spaceinvaders.description",
       tags: [".NET"],
       imageUrl: "https://placehold.co/600x340",
     },
     {
-      title: "3D Image Reconstruction",
-      description: "An Android app that takes images and videos and creates the 3d scenary",
+      titleKey: "project.3drec.title",
+      descriptionKey: "project.3drec.description",
       tags: ["Android", "Kotlin"],
       imageUrl: "https://placehold.co/600x340",
     },
@@ -89,7 +91,7 @@ export default function ProjectsSection() {
         <div className="text-center mb-16">
           <h2 className="section-title">Featured Projects</h2>
           <p className="section-subtitle mx-auto">
-            A selection of my recent work and personal projects
+            {t('projects.subtitle')}
           </p>
         </div>
 
@@ -97,8 +99,8 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
-              title={project.title}
-              description={project.description}
+              title={t(project.titleKey)}
+              description={t(project.descriptionKey)}
               tags={project.tags}
               imageUrl={project.imageUrl}
             />
