@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import {Header}  from "../components/Header";
 import { Home } from "../components/Home";
-import About from "../components/About";
+import AboutSection from "../components/AboutSection";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
@@ -82,7 +82,7 @@ const Index = () => {
       case "home":
         return <Home />;
       case "about":
-        return <About />;
+        return <AboutSection />;
       case "experience":
         return <Experience />;
       case "projects":
