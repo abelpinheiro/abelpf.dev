@@ -17,6 +17,23 @@ const translations = {
     'nav.projects': 'Projects',
     'nav.resume': 'Resume',
     'nav.blogs': 'Blogs',
+
+    // Home Section
+    'home.tagline': 'Software Developer',
+    'home.title.static': 'Creating',
+    'home.title.highlight': 'cool things',
+    'home.subtitle': "I'm a software engineer passionate about designing scalable systems, crafting high-quality software, and exploring the intersection of technology, science, and engineering.",
+    'home.button.work': 'View My Work',
+    'home.button.contact': 'Contact Me',
+
+    // About Section
+    'about.title': 'About Me',
+    'about.subtitle': "Here you'll find more information about me, what I do, and my current skills in terms of programming and technology.",
+    'about.gettoknowme.title': 'Get to know me!',
+    'about.gettoknowme.p1': 'As a Backend Developer and Computer Engineer, I specialize in architecting robust and efficient systems with .NET, having maintained several projects. My approach to software is deeply influenced by my passion for complex problem-solving, which I\'m currently exploring further through a Master\'s degree in Autonomous Robotics.',
+    'about.gettoknowme.p2': "I'm open to Job opportunities where I can contribute, learn, and grow. If you have an opportunity that matches my skills and experience, don't hesitate to contact me.",
+    'about.gettoknowme.p3': "I thrive on bringing ideas to life, whether it's a personal electronics project or a large-scale distributed system. Outside of technology, my interests are diverse: I enjoy playing the violin, going to the gym, and studying math or physics.",
+    'about.skills.title': 'My Skills',
     
     // Projects Section
     'projects.title': 'Featured Projects',
@@ -48,6 +65,23 @@ const translations = {
     'nav.projects': 'Projetos',
     'nav.resume': 'Currículo',
     'nav.blogs': 'Blog',
+
+    // Seção Home
+    'home.tagline': 'Desenvolvedor de Software',
+    'home.title.static': 'Criando',
+    'home.title.highlight': 'coisas incríveis',
+    'home.subtitle': 'Sou um engenheiro de software apaixonado por projetar sistemas escaláveis, criar software de alta qualidade e explorar a interseção entre tecnologia, ciência e engenharia.',
+    'home.button.work': 'Ver Meus Projetos',
+    'home.button.contact': 'Entre em Contato',
+
+    // Seção Sobre
+    'about.title': 'Sobre Mim',
+    'about.subtitle': 'Aqui você encontrará mais informações sobre mim, o que eu faço e minhas habilidades atuais em programação e tecnologia.',
+    'about.gettoknowme.title': 'Conheça-me melhor!',
+    'about.gettoknowme.p1': 'Como Desenvolvedor Backend e Engenheiro da Computação, especializo-me em arquitetar sistemas robustos e eficientes com .NET, tendo mantido diversos projetos. Minha abordagem para software é profundamente influenciada pela minha paixão por resolver problemas complexos, algo que estou aprofundando através de um mestrado em Robótica Autônoma.',
+    'about.gettoknowme.p2': 'Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se você tem uma oportunidade que corresponde às minhas habilidades e experiência, não hesite em entrar em contato.',
+    'about.gettoknowme.p3': 'Adoro dar vida a ideias, seja num projeto pessoal de eletrónica ou num sistema distribuído de grande escala. Fora da tecnologia, os meus interesses são diversos: gosto de tocar violino, ir ao ginásio e estudar matemática ou física.',
+    'about.skills.title': 'Minhas Habilidades',
     
     // Projects Section
     'projects.title': 'Projetos em Destaque',

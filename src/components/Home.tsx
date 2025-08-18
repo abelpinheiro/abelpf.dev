@@ -1,6 +1,8 @@
 import { cn } from "../lib/utils";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Home() {
+  const { t } = useLanguage();
   return (
     <section id="home" className="min-h-screen flex items-center pt-16 pb-16">
       <div className="container">
@@ -8,14 +10,14 @@ export function Home() {
           <div className="space-y-6 text-center">
             <div className="inline-block animate-fade-in">
               <div className="px-3 py-1 text-sm font-medium rounded-full bg-secondary text-secondary-foreground mb-6">
-                Software Developer
+                {t('home.tagline')}
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight animate-slide-in-bottom">
-              Creating <span className="text-primary">cool things</span>
+              {t('home.title.static')} <span className="text-primary">{t('home.title.highlight')}</span>
             </h1>
             <p className="text-xl text-muted-foreground animate-slide-in-bottom [animation-delay:200ms]">
-            I'm a software engineer passionate about designing scalable systems, crafting high-quality software, and exploring the intersection of technology, science, and engineering.            </p>
+            {t('home.subtitle')}</p>
             <div className="pt-4 flex justify-center gap-4 animate-slide-in-bottom [animation-delay:400ms]">
               <a
                 href="#projects"
@@ -24,7 +26,7 @@ export function Home() {
                   "hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/20"
                 )}
               >
-                View My Work
+                {t('home.button.work')}
               </a>
               <a
                 href="#contact"
@@ -33,7 +35,7 @@ export function Home() {
                   "hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary/20"
                 )}
               >
-                Contact Me
+                {t('home.button.contact')}
               </a>
             </div>
           </div>
