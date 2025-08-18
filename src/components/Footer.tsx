@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/contexts/LanguageContext";
 
-export default function Footer() {
+export default function Footer() {  
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -10,20 +12,20 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Abel Pinheiro de Figueiredo</h3>
             <p className="text-sm text-muted-foreground">
-              A passionate engineer creating cool stuff.
+              {t('footer.bio')}
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Contact</h3>
+            <h3 className="text-lg font-bold mb-4">{t('footer.contact.title')}</h3>
             <ul className="space-y-2 text-sm">
               <li>Email: abelpinheiro95@gmail.com</li>
-              <li>Location: Fortaleza, Ceará, Brazil</li>
+              <li>{t('footer.location')}</li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-4">{t('footer.quicklinks.title')}</h3>
             <ul className="space-y-2 text-sm">
               {["Home", "About", "Experience", "Projects", "Resume", "Blogs"].map((item) => (
                 <li key={item}>

@@ -30,10 +30,45 @@ const translations = {
     'about.title': 'About Me',
     'about.subtitle': "Here you'll find more information about me, what I do, and my current skills in terms of programming and technology.",
     'about.gettoknowme.title': 'Get to know me!',
-    'about.gettoknowme.p1': 'As a Backend Developer and Computer Engineer, I specialize in architecting robust and efficient systems with .NET, having maintained several projects. My approach to software is deeply influenced by my passion for complex problem-solving, which I\'m currently exploring further through a Master\'s degree in Autonomous Robotics.',
-    'about.gettoknowme.p2': "I'm open to Job opportunities where I can contribute, learn, and grow. If you have an opportunity that matches my skills and experience, don't hesitate to contact me.",
+    'about.gettoknowme.p1.prefix': 'As a ',
+    'about.gettoknowme.p1.worktitle': 'Backend Developer',
+    'about.gettoknowme.p1.concattitles': ' and ',
+    'about.gettoknowme.p1.graduationtitle': 'Computer Engineer',
+    'about.gettoknowme.p1.maintext': ', I specialize in architecting robust and efficient systems with .NET, having maintained several projects. My approach to software is deeply influenced by my passion for complex problem-solving, which I\'m currently exploring further through a Master\'s degree in ',
+    'about.gettoknowme.p1.mastersdegree.highlight': 'Autonomous Robotics.',
+    'about.gettoknowme.p2.prefix': "I'm open to ",
+    'about.gettoknowme.p2.jobopportunities.highlight': 'Job opportunities',
+    'about.gettoknowme.p2.maintext': " where I can contribute, learn, and grow. If you have an opportunity that matches my skills and experience, don't hesitate to ",
+    'about.gettoknowme.p2.contactme.highlight': 'contact me.',
     'about.gettoknowme.p3': "I thrive on bringing ideas to life, whether it's a personal electronics project or a large-scale distributed system. Outside of technology, my interests are diverse: I enjoy playing the violin, going to the gym, and studying math or physics.",
     'about.skills.title': 'My Skills',
+    'about.contactme.button': "Contact Me",
+
+    // Experience Section (New)
+    'experience.title': 'Work Experience',
+    'experience.subtitle': 'My professional journey and the companies I\'ve had the pleasure to work with',
+    'experience.present': 'Present',
+    
+    'experience.job1.date': 'Sep 2022 -', // Keep the dash, 'Present' is separate
+    'experience.job1.title': 'Senior Software Developer',
+    'experience.job1.company': 'Philips',
+    'experience.job1.description': 'Developed and maintained IntelliSpace Critical Care and Anesthesia (ICCA), a Patient Data Management System used in hospitals across Europe, USA, and China. Reviewed security reports, mitigating vulnerabilities and ensuring compliance with healthcare security standards. Optimized database queries, reducing execution time and improving real-time data retrieval.',
+
+    'experience.job2.date': 'May 2021 - Sep 2022',
+    'experience.job2.title': '.NET Developer',
+    'experience.job2.company': 'Dell Lead',
+    'experience.job2.description': 'Developed APIs for a modernized version of the legacy Spare Parts Master Database (SPMD) and GSCV, redesigning and improving business rules using Clean Architecture and Domain-Driven Design.',
+
+    'experience.job3.date': 'Jul 2020 - Apr 2021',
+    'experience.job3.title': 'Backend Developer Intern',
+    'experience.job3.company': 'GREat',
+    'experience.job3.description': "Developed a middleware to integrate with Camunda's BPMN API, automating government processes such as ID issuance, reducing bureaucratic overhead and processing time. Designed and implemented web scraping scripts to collect options market data from B3, enabling data analysis and financial insights.",
+
+    'experience.job4.date': 'May 2018 - Feb 2020',
+    'experience.job4.title': 'Android Developer Intern',
+    'experience.job4.company': 'SSPDS/CE',
+    'experience.job4.description': 'Developed 911, a mobile application that integrated with state security systems, replacing phone-based emergency reporting with a digital solution.',
+
     
     // Projects Section
     'projects.title': 'Featured Projects',
@@ -56,6 +91,12 @@ const translations = {
     'project.spaceinvaders.description': 'A clone of Space Invaders.',
     'project.3drec.title': '3D Image Reconstruction',
     'project.3drec.description': 'An Android app that takes images and videos and creates the 3d scenary.',
+
+    // Footer (New)
+    'footer.bio': 'A passionate engineer creating cool stuff.',
+    'footer.contact.title': 'Contact',
+    'footer.location': 'Location: Fortaleza, Ceará, Brazil',
+    'footer.quicklinks.title': 'Quick Links',
   },
   pt: {
     // Header
@@ -78,10 +119,45 @@ const translations = {
     'about.title': 'Sobre Mim',
     'about.subtitle': 'Aqui você encontrará mais informações sobre mim, o que eu faço e minhas habilidades atuais em programação e tecnologia.',
     'about.gettoknowme.title': 'Conheça-me melhor!',
-    'about.gettoknowme.p1': 'Como Desenvolvedor Backend e Engenheiro da Computação, especializo-me em arquitetar sistemas robustos e eficientes com .NET, tendo mantido diversos projetos. Minha abordagem para software é profundamente influenciada pela minha paixão por resolver problemas complexos, algo que estou aprofundando através de um mestrado em Robótica Autônoma.',
-    'about.gettoknowme.p2': 'Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se você tem uma oportunidade que corresponde às minhas habilidades e experiência, não hesite em entrar em contato.',
-    'about.gettoknowme.p3': 'Adoro dar vida a ideias, seja num projeto pessoal de eletrónica ou num sistema distribuído de grande escala. Fora da tecnologia, os meus interesses são diversos: gosto de tocar violino, ir ao ginásio e estudar matemática ou física.',
+    'about.gettoknowme.p1.prefix': 'Como ',
+    'about.gettoknowme.p1.worktitle': 'Desenvolvedor Backend',
+    'about.gettoknowme.p1.concattitles': ' e ',
+    'about.gettoknowme.p1.graduationtitle': 'Engenheiro da Computação',
+    'about.gettoknowme.p1.maintext': ', especializo-me em arquitetar sistemas robustos e eficientes com .NET, tendo mantido diversos projetos. Minha abordagem para software é profundamente  influenciada pela minha paixão por resolver problemas complexos, algo que estou aprofundando através de um mestrado em ',
+    'about.gettoknowme.p1.mastersdegree.highlight': 'Robótica Autônoma.',
+    'about.gettoknowme.p2.prefix': 'Estou aberto a ',
+    'about.gettoknowme.p2.jobopportunities.highlight': 'oportunidades de trabalho',
+    'about.gettoknowme.p2.maintext': " onde possa contribuir, aprender e crescer. Se você tem uma oportunidade que corresponde às minhas habilidades e experiência, não hesite em entrar em ",
+    'about.gettoknowme.p2.contactme.highlight': 'contato.',
+    'about.gettoknowme.p3': 'Adoro dar vida a ideias, seja num projeto pessoal de eletrónica ou num sistema distribuído de grande escala. Fora da tecnologia, os meus interesses são diversos: gosto de tocar violino, fazer exercícios físicos e estudar matemática/física.',
     'about.skills.title': 'Minhas Habilidades',
+    'about.contactme.button': "Me Contate",
+
+    // Seção Experiência (Nova)
+    'experience.title': 'Experiência Profissional',
+    'experience.subtitle': 'Minha jornada profissional e as empresas com as quais tive o prazer de trabalhar',
+    'experience.present': 'Atual',
+
+    'experience.job1.date': 'Set 2022 -',
+    'experience.job1.title': 'Desenvolvedor de Software Sênior',
+    'experience.job1.company': 'Philips',
+    'experience.job1.description': 'Desenvolvi e mantive o IntelliSpace Critical Care and Anesthesia (ICCA), um Sistema de Gerenciamento de Dados de Pacientes usado em hospitais na Europa, EUA e China. Revisei relatórios de segurança, mitigando vulnerabilidades e garantindo conformidade com os padrões de segurança em saúde. Otimizei consultas a bancos de dados, reduzindo o tempo de execução e melhorando a recuperação de dados em tempo real.',
+
+    'experience.job2.date': 'Mai 2021 - Set 2022',
+    'experience.job2.title': 'Desenvolvedor .NET',
+    'experience.job2.company': 'Dell Lead',
+    'experience.job2.description': 'Desenvolvi APIs para uma versão modernizada do banco de dados legado Spare Parts Master Database (SPMD) e GSCV, redesenhando e melhorando as regras de negócio usando Arquitetura Limpa e Domain-Driven Design.',
+
+    'experience.job3.date': 'Jul 2020 - Abr 2021',
+    'experience.job3.title': 'Estagiário de Desenvolvimento Backend',
+    'experience.job3.company': 'GREat',
+    'experience.job3.description': 'Desenvolvi um middleware para integrar com a API BPMN do Camunda, automatizando processos governamentais como emissão de identidade, reduzindo a sobrecarga burocrática e o tempo de processamento. Projetei e implementei scripts de web scraping para coletar dados do mercado de opções da B3, permitindo análise de dados e insights financeiros.',
+
+    'experience.job4.date': 'Mai 2018 - Fev 2020',
+    'experience.job4.title': 'Estagiário de Desenvolvimento Android',
+    'experience.job4.company': 'SSPDS/CE',
+    'experience.job4.description': 'Desenvolvi o 911, um aplicativo móvel que se integrava aos sistemas de segurança do estado, substituindo o reporte de emergências por telefone por uma solução digital.',
+
     
     // Projects Section
     'projects.title': 'Projetos em Destaque',
@@ -103,7 +179,13 @@ const translations = {
     'project.spaceinvaders.title': 'Space Invaders',
     'project.spaceinvaders.description': 'Um clone do jogo Space Invaders.',
     'project.3drec.title': 'Reconstrução de Imagem 3D',
-    'project.3drec.description': 'Um aplicativo Android que utiliza imagens e vídeos para criar o cenário em 3D.'
+    'project.3drec.description': 'Um aplicativo Android que utiliza imagens e vídeos para criar o cenário em 3D.',
+
+    // Rodapé (Novo)
+    'footer.bio': 'Um engenheiro apaixonado por criar coisas incríveis.',
+    'footer.contact.title': 'Contato',
+    'footer.location': 'Localização: Fortaleza, Ceará, Brasil',
+    'footer.quicklinks.title': 'Links Rápidos',
   },
 };
 
