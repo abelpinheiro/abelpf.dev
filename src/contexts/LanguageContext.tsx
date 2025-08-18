@@ -78,19 +78,33 @@ const translations = {
     
     // Project Cards
     'project.knowledgequiz.title': 'KnowledgeQuiz Platform',
-    'project.knowledgequiz.description': 'A full-featured quiz system with quiz management and analytics in the web and an Android app quiz game.',
+    'project.knowledgequiz.description': 'A full-featured quiz system with quiz management and analytics on the web and a quiz game on an Android app.',
+    'project.knowledgequiz.details': 'The project consists of a central API that serves two fronts: a web dashboard for quiz management and results analysis, and a mobile application where users can play and test their knowledge.',
+    
     'project.robotics101.title': 'Robotics 101 - Path Planning',
-    'project.robotics101.description': 'An interactive website to show the different algorithms and strategies of Path Planning in robotics.',
+    'project.robotics101.description': 'An interactive website to demonstrate the different algorithms and strategies of Path Planning in robotics.',
+    'project.robotics101.details': 'An educational platform focused on navigation algorithms for autonomous robots. It combines theoretical foundations with visual and practical resources, allowing the user to execute and compare different algorithms interactively.',
+
     'project.onlinephotoshop.title': 'DIP/CV 101 - Online Photoshop',
     'project.onlinephotoshop.description': 'An interactive website showcasing algorithms of Digital Image Processing and Computer Vision.',
+    'project.onlinephotoshop.details': 'An interactive web application where the user can apply Image Processing and Computer Vision algorithms. It is possible to upload images or use those provided by the site, exploring the theory behind each method and adjusting their parameters in real-time.',
+
     'project.remotemousecontrol.title': 'Remote Mouse Control',
-    'project.remotemousecontrol.description': 'A desktop application and an Android app that will allow the smartphone to connect to the computer and act as a mouse remotely.',
-    'project.trackinglibrary.title': 'Tracking Library System',
-    'project.trackinglibrary.description': 'An Android app where the user can create its own collection libraries (games, books) and manage them.',
-    'project.spaceinvaders.title': 'Space Invaders Game',
-    'project.spaceinvaders.description': 'A clone of Space Invaders.',
+    'project.remotemousecontrol.description': 'A desktop application and an Android app that allow a smartphone to connect to a computer and act as a remote mouse.',
+    'project.remotemousecontrol.details': 'The solution consists of a lightweight desktop agent and an Android application. Communication is established via WebSocket, ensuring low latency to control the cursor and mouse clicks directly from the smartphone.',
+    
+    'project.trackinglibrary.title': 'Collection Management System',
+    'project.trackinglibrary.description': 'An Android app where the user can create and manage their own collections (of games, books, etc.).',
+    'project.trackinglibrary.details': 'A native Android application that allows users to catalog and manage personal collections (books, games, movies, etc.). It offers features to add, edit, search, and filter items, all stored locally on the device.',
+
+    'project.spaceinvaders.title': 'Space Invaders',
+    'project.spaceinvaders.description': 'A clone of the Space Invaders game.',
+    'project.spaceinvaders.details': 'A faithful recreation of the classic Space Invaders, developed from scratch. The game includes a scoring system, multiple levels of increasing difficulty, and controls for ship movement and firing.',
+
     'project.3drec.title': '3D Image Reconstruction',
-    'project.3drec.description': 'An Android app that takes images and videos and creates the 3d scenary.',
+    'project.3drec.description': 'An Android app that uses images and videos to create a 3D scene.',
+    'project.3drec.details': 'An Android application that applies Computer Vision algorithms, such as Structure from Motion (SfM), to process a sequence of images or a video and generate a 3D reconstruction of the captured scene.',
+
 
     // Resume Section
     'resume.title': 'Resume & Qualifications',
@@ -189,19 +203,39 @@ const translations = {
     // Project Cards
     'project.knowledgequiz.title': 'Plataforma KnowledgeQuiz',
     'project.knowledgequiz.description': 'Um sistema de quiz completo com gerenciamento, análise de dados na web e um jogo de quiz em aplicativo para Android.',
+    'project.knowledgequiz.details': 'O projeto consiste em uma API central que serve duas frentes: um painel web para gerenciamento de quizes e análise de resultados, e um aplicativo móvel onde os usuários podem jogar e testar seus conhecimentos.',
+
     'project.robotics101.title': 'Robótica 101 - Planejamento de Navegação',
     'project.robotics101.description': 'Um site interativo para demonstrar os diferentes algoritmos e estratégias de Planejamento de Trajetória em robótica.',
+    'project.robotics101.details': 'Plataforma educacional focada em algoritmos de navegação para robôs autônomos. Combina fundamentos teóricos com recursos visuais e práticos, permitindo que o usuário execute e compare diferentes algoritmos interativamente.',
+
     'project.onlinephotoshop.title': 'PDI/VC 101 - Photoshop Online',
     'project.onlinephotoshop.description': 'Um site interativo que apresenta algoritmos de Processamento Digital de Imagens e Visão Computacional.',
+    'project.onlinephotoshop.details': 'Uma aplicação web interativa onde o usuário pode aplicar algoritmos de Processamento de Imagem e Visão Computacional. É possível fazer upload de imagens ou usar as fornecidas pelo site, explorando a teoria por trás de cada método e ajustando seus parâmetros em tempo real.',
+
     'project.remotemousecontrol.title': 'Controle Remoto de Mouse',
     'project.remotemousecontrol.description': 'Uma aplicação para desktop e um app para Android que permitem ao smartphone conectar-se ao computador e funcionar como um mouse remoto.',
+    'project.remotemousecontrol.details': 'A solução é composta por um agente leve para desktop e um aplicativo Android. A comunicação é estabelecida via WebSocket, garantindo baixa latência para controlar o cursor e os cliques do mouse diretamente pelo smartphone.',
+
     'project.trackinglibrary.title': 'Sistema Gerenciador de Coleções',
     'project.trackinglibrary.description': 'Um aplicativo Android onde o usuário pode criar suas próprias coleções (de jogos, livros, etc.) e gerenciá-las.',
+    'project.trackinglibrary.details': 'Aplicativo Android nativo que permite ao usuário catalogar e gerenciar coleções pessoais (livros, jogos, filmes, etc.). Oferece funcionalidades para adicionar, editar, buscar e filtrar itens, tudo armazenado localmente no dispositivo.',
+
     'project.spaceinvaders.title': 'Space Invaders',
     'project.spaceinvaders.description': 'Um clone do jogo Space Invaders.',
+    'project.spaceinvaders.details': 'Recriação fiel do clássico Space Invaders, desenvolvido do zero. O jogo inclui sistema de pontuação, múltiplos níveis de dificuldade crescente e controle de movimento da nave e disparos.',
+
     'project.3drec.title': 'Reconstrução de Imagem 3D',
     'project.3drec.description': 'Um aplicativo Android que utiliza imagens e vídeos para criar o cenário em 3D.',
+    'project.3drec.details': 'Aplicativo Android que aplica algoritmos de Visão Computacional, como Structure from Motion (SfM), para processar uma sequência de imagens ou um vídeo e gerar uma reconstrução 3D da cena capturada.',
 
+
+    // Project Details
+    'project.details': 'Project Details',
+    'project.technologies': 'Technologies Used',
+    'project.viewCode': 'View Code',
+    'project.viewLive': 'View Live',
+    
     // Seção Curriculo
     'resume.title': 'Currículo & Qualificações',
     'resume.subtitle': 'Minha formação acadêmica, certificações e um link para baixar meu currículo completo',

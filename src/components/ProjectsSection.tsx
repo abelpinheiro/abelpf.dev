@@ -1,17 +1,20 @@
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ProjectModal } from "./ProjectModal";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: string;
+  imageUrl: string;  
+  onClick: () => void;
 }
 
-function ProjectCard({ title, description, tags, imageUrl }: ProjectCardProps) {
+function ProjectCard({ title, description, tags, imageUrl, onClick }: ProjectCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-lg border bg-background shadow-md transition-all hover:shadow-lg">
+    <div className="group relative overflow-hidden rounded-lg border bg-background shadow-md transition-all hover:shadow-lg cursor-pointer"
+    onClick={onClick}>
       <div className="aspect-video overflow-hidden">
         <img 
           src={imageUrl} 
@@ -42,53 +45,95 @@ function ProjectCard({ title, description, tags, imageUrl }: ProjectCardProps) {
 export default function ProjectsSection() {
   const { t } = useLanguage();
   const [showAll, setShowAll] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<typeof allProjects[0] | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const allProjects = [
     {
       titleKey: "project.knowledgequiz.title",
       descriptionKey: "project.knowledgequiz.description",
+      detailsKey: 'project.knowledgequiz.details',
       tags: ["Android", "Kotlin", "C#", ".NET", "PostgreSQL", "React"],
       imageUrl: "https://placehold.co/600x340",
+      githubUrl: "https://github.com/abelpinheiro/KnowledgeQuiz.Api",
+      liveUrl: "",
     },
     {
       titleKey: "project.robotics101.title",
       descriptionKey: "project.robotics101.description",
+      detailsKey: 'project.robotics101.details',
       tags: [".NET", "C#"],
       imageUrl: "https://placehold.co/600x340",
+      githubUrl: "",
+      liveUrl: "",
     },
     {
       titleKey: "project.onlinephotoshop.title",
       descriptionKey: "project.onlinephotoshop.description  ",
+      detailsKey: 'project.onlinephotoshop.details',
       tags: [".NET", "React", "Python"],
       imageUrl: "https://placehold.co/600x340",
+      githubUrl: "",
+      liveUrl: "",
     },
     {
       titleKey: "project.remotemousecontrol.title",
       descriptionKey: "project.remotemousecontrol.description",
+      detailsKey: 'project.remotemousecontrol.details',
       tags: [".NET", "Android", "Kotlin", "WebSocket"],
       imageUrl: "https://placehold.co/600x340",
+      githubUrl: "",
+      liveUrl: "",
     },
     {
       titleKey: "project.trackinglibrary.title",
       descriptionKey: "project.trackinglibrary.description",
+      detailsKey: 'project.trackinglibrary.details',
       tags: ["Android", "Kotlin"],
       imageUrl: "https://placehold.co/600x340",
+      githubUrl: "https://github.com/abelpinheiro/TrackingLibraryApp",
+      liveUrl: "",
     },
     {
       titleKey: "project.spaceinvaders.title",
       descriptionKey: "project.spaceinvaders.description",
+      detailsKey: 'project.spaceinvaders.details',
       tags: [".NET"],
       imageUrl: "https://placehold.co/600x340",
+      githubUrl: "https://github.com/abelpinheiro/SpaceInvaders",
+      liveUrl: "",
     },
     {
       titleKey: "project.3drec.title",
       descriptionKey: "project.3drec.description",
+      detailsKey: 'project.3drec.details',
       tags: ["Android", "Kotlin"],
       imageUrl: "https://placehold.co/600x340",
+      githubUrl: "https://github.com/abelpinheiro/3d-reconstruct-app",
+      liveUrl: "",
     },
   ];
 
   const displayedProjects = showAll ? allProjects : allProjects.slice(0, 3);
+
+  const handleToggleShowAll = () => {
+    setShowAll(!showAll);
+    
+    // Scroll to section with slight delay to allow DOM update
+    setTimeout(() => {
+      if (sectionRef.current) {
+        const offsetTop = sectionRef.current.offsetTop - 100; // Account for fixed header
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
+  };
+
+  const handleProjectClick = (project: typeof allProjects[0]) => {
+    setSelectedProject(project);
+  };
 
   return (
     <section id="projects" className="section-padding bg-secondary/30">
@@ -108,13 +153,14 @@ export default function ProjectsSection() {
               description={t(project.descriptionKey)}
               tags={project.tags}
               imageUrl={project.imageUrl}
+              onClick={() => handleProjectClick(project)}
             />
           ))}
         </div>
 
         <div className="flex justify-center mt-12">
           <button
-            onClick={() => setShowAll(!showAll)}
+            onClick={handleToggleShowAll}
             className={cn(
               "inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors",
               "hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/20"
@@ -124,6 +170,12 @@ export default function ProjectsSection() {
           </button>
         </div>
       </div>
+
+      <ProjectModal
+        isOpen={!!selectedProject}
+        onClose={() => setSelectedProject(null)}
+        project={selectedProject}
+      />
     </section>
   );
 }
