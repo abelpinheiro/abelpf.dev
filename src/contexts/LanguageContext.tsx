@@ -44,7 +44,7 @@ const translations = {
     'about.skills.title': 'My Skills',
     'about.contactme.button': "Contact Me",
 
-    // Experience Section (New)
+    // Experience Section
     'experience.title': 'Work Experience',
     'experience.subtitle': 'My professional journey and the companies I\'ve had the pleasure to work with',
     'experience.present': 'Present',
@@ -92,7 +92,17 @@ const translations = {
     'project.3drec.title': '3D Image Reconstruction',
     'project.3drec.description': 'An Android app that takes images and videos and creates the 3d scenary.',
 
-    // Footer (New)
+    // Resume Section
+    'resume.title': 'Resume & Qualifications',
+    'resume.subtitle': 'My educational background, certifications, and a download link to my full resume',
+    'resume.education.title': 'Education',
+    'resume.certifications.title': 'Certifications',
+    'resume.education.n1': 'Master of Engineering - Teleinformatics Engineering',
+    'resume.education.n2': 'Bachelor in Computer Engineering',
+    'resume.education.institution.n1': 'UFC - Federal University of Ceará',
+    'resume.pdf.download': 'Download Full Resume',
+    
+    // Footer
     'footer.bio': 'A passionate engineer creating cool stuff.',
     'footer.contact.title': 'Contact',
     'footer.location': 'Location: Fortaleza, Ceará, Brazil',
@@ -133,7 +143,7 @@ const translations = {
     'about.skills.title': 'Minhas Habilidades',
     'about.contactme.button': "Me Contate",
 
-    // Seção Experiência (Nova)
+    // Seção Experiência
     'experience.title': 'Experiência Profissional',
     'experience.subtitle': 'Minha jornada profissional e as empresas com as quais tive o prazer de trabalhar',
     'experience.present': 'Atual',
@@ -181,7 +191,17 @@ const translations = {
     'project.3drec.title': 'Reconstrução de Imagem 3D',
     'project.3drec.description': 'Um aplicativo Android que utiliza imagens e vídeos para criar o cenário em 3D.',
 
-    // Rodapé (Novo)
+    // Seção Curriculo
+    'resume.title': 'Currículo & Qualificações',
+    'resume.subtitle': 'Minha formação acadêmica, certificações e um link para baixar meu currículo completo',
+    'resume.education.title': 'Formação Acadêmica',
+    'resume.certifications.title': 'Certificações',
+    'resume.education.n1': 'Mestrado em Engenharia de Teleinformática',
+    'resume.education.n2': 'Bacharelado em Engenharia de Computação',
+    'resume.education.institution.n1': 'UFC - Universidade Federal do Ceará',
+    'resume.pdf.download': 'Baixar Currículo',
+
+    // Rodapé
     'footer.bio': 'Um engenheiro apaixonado por criar coisas incríveis.',
     'footer.contact.title': 'Contato',
     'footer.location': 'Localização: Fortaleza, Ceará, Brasil',

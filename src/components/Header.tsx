@@ -126,7 +126,7 @@ export function Header() {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-background z-40 transition-transform duration-300 ease-in-out md:hidden pt-20",
+          "fixed inset-0 bg-background/95 backdrop-blur-md z-40 transition-transform duration-300 ease-in-out md:hidden pt-20",
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >

@@ -5,7 +5,7 @@ import { Home } from "../components/Home";
 import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
-import Resume from "../components/Resume";
+import ResumeSection from "../components/ResumeSection";
 import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
 
@@ -88,7 +88,7 @@ const Index = () => {
       case "projects":
         return <ProjectsSection />;
       case "resume":
-        return <Resume />;
+        return <ResumeSection />;
       case "blogs":
         return <Blogs />;
       default:
