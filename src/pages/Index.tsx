@@ -4,7 +4,7 @@ import {Header}  from "../components/Header";
 import { Home } from "../components/Home";
 import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
-import Projects from "../components/Projects";
+import ProjectsSection from "../components/ProjectsSection";
 import Resume from "../components/Resume";
 import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
@@ -86,7 +86,7 @@ const Index = () => {
       case "experience":
         return <ExperienceSection />;
       case "projects":
-        return <Projects />;
+        return <ProjectsSection />;
       case "resume":
         return <Resume />;
       case "blogs":
