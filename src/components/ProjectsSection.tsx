@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ProjectCardProps {
@@ -40,7 +41,9 @@ function ProjectCard({ title, description, tags, imageUrl }: ProjectCardProps) {
 
 export default function ProjectsSection() {
   const { t } = useLanguage();
-  const projects = [
+  const [showAll, setShowAll] = useState(false);
+
+  const allProjects = [
     {
       titleKey: "project.knowledgequiz.title",
       descriptionKey: "project.knowledgequiz.description",
@@ -85,18 +88,20 @@ export default function ProjectsSection() {
     },
   ];
 
+  const displayedProjects = showAll ? allProjects : allProjects.slice(0, 3);
+
   return (
     <section id="projects" className="section-padding bg-secondary/30">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">{t('projects.title')}</h2>
           <p className="section-subtitle mx-auto">
             {t('projects.subtitle')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <ProjectCard
               key={index}
               title={t(project.titleKey)}
@@ -108,15 +113,15 @@ export default function ProjectsSection() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <a
-            href="#"
+          <button
+            onClick={() => setShowAll(!showAll)}
             className={cn(
               "inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors",
               "hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/20"
             )}
           >
-            View All Projects
-          </a>
+            {showAll ? t('projects.showLess') : t('projects.viewAll')}
+          </button>
         </div>
       </div>
     </section>
