@@ -6,7 +6,7 @@ import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ResumeSection from "../components/ResumeSection";
-import Blogs from "../components/Blogs";
+import BlogsSection from "../components/BlogsSection";
 import Footer from "../components/Footer";
 
 type SectionType = "home" | "about" | "experience" | "projects" | "resume" | "blogs";
@@ -90,7 +90,7 @@ const Index = () => {
       case "resume":
         return <ResumeSection />;
       case "blogs":
-        return <Blogs />;
+        return <BlogsSection />;
       default:
         return <Home />;
     }

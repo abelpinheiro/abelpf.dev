@@ -107,6 +107,17 @@ const translations = {
     'footer.contact.title': 'Contact',
     'footer.location': 'Location: Fortaleza, Ceará, Brazil',
     'footer.quicklinks.title': 'Quick Links',
+
+    // Not Found Page
+    'notfound.title': 'Page Not Found',
+    'notfound.description': 'Sorry, the page you are looking for does not exist or has been moved.',
+    'notfound.goHome': 'Go Home',
+    'notfound.goBack': 'Go Back',
+    
+    // Under Construction
+    'underConstruction.title': 'Under Construction',
+    'underConstruction.description': 'This section is being developed and will be available soon. Thank you for your patience!',
+    'underConstruction.status': 'In development',
   },
   pt: {
     // Header
@@ -206,6 +217,17 @@ const translations = {
     'footer.contact.title': 'Contato',
     'footer.location': 'Localização: Fortaleza, Ceará, Brasil',
     'footer.quicklinks.title': 'Links Rápidos',
+
+    // Página de Não Encontrado
+    'notfound.title': 'Página Não Encontrada',
+    'notfound.description': 'Desculpe, a página que você está procurando não existe ou foi movida.',
+    'notfound.goHome': 'Voltar ao Início',
+    'notfound.goBack': 'Voltar',
+
+    // Em Construção
+    'underConstruction.title': 'Em Construção',
+    'underConstruction.description': 'Esta seção está sendo desenvolvida e estará disponível em breve. Obrigado pela paciência!',
+    'underConstruction.status': 'Em desenvolvimento',
   },
 };
 
