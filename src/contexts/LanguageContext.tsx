@@ -49,7 +49,7 @@ const translations = {
     'experience.subtitle': 'My professional journey and the companies I\'ve had the pleasure to work with',
     'experience.present': 'Present',
     
-    'experience.job1.date': 'Sep 2022 -', // Keep the dash, 'Present' is separate
+    'experience.job1.date': 'Sep 2022 -',
     'experience.job1.title': 'Senior Software Developer',
     'experience.job1.company': 'Philips',
     'experience.job1.description': 'Developed and maintained IntelliSpace Critical Care and Anesthesia (ICCA), a Patient Data Management System used in hospitals across Europe, USA, and China. Reviewed security reports, mitigating vulnerabilities and ensuring compliance with healthcare security standards. Optimized database queries, reducing execution time and improving real-time data retrieval.',

@@ -1,3 +1,4 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import { cn } from "@/lib/utils";
 
 interface ExperienceItemProps {
@@ -34,31 +35,32 @@ function ExperienceItem({ title, company, period, description, isActive }: Exper
 }
 
 export default function ExperienceSection() {
+  const { t } = useLanguage();
   const experiences = [
     {
-      title: "Senior Software Developer",
+      title: "experience.job1.title",
       company: "Philips",
-      period: "Sep 2022 - Present",
-      description: "Developed and maintained IntelliSpace Critical Care and Anesthesia (ICCA), a Patient Data Management System used in hospitals across Europe, USA, and China. Reviewed security reports, mitigating vulnerabilities and ensuring compliance with healthcare security standards. Optimized database queries, reducing execution time and improving real-time data retrieval.",
+      period: `${t("experience.job1.date")} ${t("experience.present")}`,
+      description: "experience.job1.description",
       isActive: true,
     },
     {
-      title: ".NET Developer",
+      title: "experience.job2.title",
       company: "Dell Lead",
-      period: "May 2021 - Sep 2022",
-      description: "Developed APIs for a modernized version of the legacy Spare Parts Master Database (SPMD) and GSCV, redesigning and improving business rules using Clean Architecture and Domain-Driven Design.",
+      period: "experience.job2.date",
+      description: "experience.job2.description",
     },
     {
-      title: "Backend Developer Intern",
+      title: "experience.job3.title",
       company: "GREat",
-      period: "Jul 2020 - Apr 2021",
-      description: "Developed a middleware to integrate with Camunda’s BPMN API, automating government processes such as ID issuance, reducing bureaucratic overhead and processing time. Designed and implemented web scraping scripts to collect options market data from B3, enabling data analysis and financial insights.",
+      period: "experience.job3.date",
+      description: "experience.job3.description",
     },
     {
-      title: "Android Developer Intern",
+      title: "experience.job4.title",
       company: "SSPDS/CE",
-      period: "May 2018 - Feb 2020",
-      description: "Developed 190, a mobile application that integrated with state security systems, replacing phone-based emergency reporting with a digital solution.",
+      period: "experience.job4.date",
+      description: "experience.job4.description",
     }
   ];
 
@@ -66,9 +68,9 @@ export default function ExperienceSection() {
     <section id="experience" className="section-padding">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="section-title">Work Experience</h2>
+          <h2 className="section-title">{t("experience.title")}</h2>
           <p className="section-subtitle mx-auto">
-            My professional journey and the companies I've had the pleasure to work with
+            {t("experience.subtitle")}
           </p>
         </div>
 
@@ -76,10 +78,10 @@ export default function ExperienceSection() {
           {experiences.map((exp, index) => (
             <ExperienceItem
               key={index}
-              title={exp.title}
+              title={t(exp.title)}
               company={exp.company}
-              period={exp.period}
-              description={exp.description}
+              period={index === 0 ? exp.period : t(exp.period)}
+              description={t(exp.description)}
               isActive={exp.isActive}
             />
           ))}
