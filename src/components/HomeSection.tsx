@@ -1,7 +1,8 @@
 import { cn } from "../lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ContactModal } from "@/components/ContactModal";
 
-export function Home() {
+export function HomeSection() {
   const { t } = useLanguage();
   return (
     <section id="home" className="min-h-screen flex items-center pt-16 pb-16">
@@ -28,15 +29,16 @@ export function Home() {
               >
                 {t('home.button.work')}
               </a>
-              <a
-                href="#contact"
-                className={cn(
-                  "inline-flex h-11 items-center justify-center rounded-md border border-input bg-transparent px-8 text-sm font-medium shadow-sm transition-colors",
-                  "hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary/20"
-                )}
-              >
-                {t('home.button.contact')}
-              </a>
+              <ContactModal>
+                <button 
+                  className={cn(
+                    "inline-flex h-11 items-center justify-center rounded-md border border-input bg-transparent px-8 text-sm font-medium shadow-sm transition-colors",
+                    "hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  )}
+                  >
+                    {t('home.button.contact')}
+                </button>
+              </ContactModal>
             </div>
           </div>
         </div>

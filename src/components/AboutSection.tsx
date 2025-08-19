@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ContactModal } from "@/components/ContactModal";
 
 export default function AboutSection() {
   const { t } = useLanguage();
@@ -34,15 +35,16 @@ export default function AboutSection() {
               </p>
             </div>
             <div className="pt-4">
-              <a 
-                href="#contact" 
-                className={cn(
-                  "inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors",
-                  "hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/20"
-                )}
-              >
-                {t('about.contactme.button')}
-              </a>
+              <ContactModal>
+                <button 
+                  className={cn(
+                    "inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors",
+                    "hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  )}
+                >
+                  {t('about.contactme.button')}
+                </button>
+              </ContactModal>
             </div>
           </div>
 

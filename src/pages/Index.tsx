@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import {Header}  from "../components/Header";
-import { Home } from "../components/Home";
+import { HomeSection } from "../components/HomeSection";
 import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
@@ -80,7 +80,7 @@ const Index = () => {
   const renderSection = () => {
     switch (activeSection) {
       case "home":
-        return <Home />;
+        return <HomeSection />;
       case "about":
         return <AboutSection />;
       case "experience":
@@ -92,7 +92,7 @@ const Index = () => {
       case "blogs":
         return <BlogsSection />;
       default:
-        return <Home />;
+        return <HomeSection />;
     }
   };
 

@@ -105,6 +105,11 @@ const translations = {
     'project.3drec.description': 'An Android app that uses images and videos to create a 3D scene.',
     'project.3drec.details': 'An Android application that applies Computer Vision algorithms, such as Structure from Motion (SfM), to process a sequence of images or a video and generate a 3D reconstruction of the captured scene.',
 
+    // Project Details
+    'project.details': 'Project Details',
+    'project.technologies': 'Technologies Used',
+    'project.viewCode': 'View Code',
+    'project.viewLive': 'View Live',
 
     // Resume Section
     'resume.title': 'Resume & Qualifications',
@@ -132,6 +137,18 @@ const translations = {
     'underConstruction.title': 'Under Construction',
     'underConstruction.description': 'This section is being developed and will be available soon. Thank you for your patience!',
     'underConstruction.status': 'In development',
+
+    // Contact-me Modal
+    'contactme.title': "Get in Touch",
+    'contactme.subtitle': "Feel free to reach out through any of these channels",
+    'contactme.email': "Email",
+    'contactme.location': "Location",
+    'contactme.linkedin': "LinkedIn",
+    'contactme.github': "GitHub",
+    'contactme.orcid': "ORCID",
+    'contactme.copy': "Copy",
+    'contactme.copied': "Copied to clipboard!",
+    'contactme.visit': "Visit Profile"
   },
   pt: {
     // Header
@@ -231,10 +248,10 @@ const translations = {
 
 
     // Project Details
-    'project.details': 'Project Details',
-    'project.technologies': 'Technologies Used',
-    'project.viewCode': 'View Code',
-    'project.viewLive': 'View Live',
+    'project.details': 'Detalhes do Projeto',
+    'project.technologies': 'Tecnologias Usadas',
+    'project.viewCode': 'Ver repositório',
+    'project.viewLive': 'Ver ao vivo',
     
     // Seção Curriculo
     'resume.title': 'Currículo & Qualificações',
@@ -262,6 +279,18 @@ const translations = {
     'underConstruction.title': 'Em Construção',
     'underConstruction.description': 'Esta seção está sendo desenvolvida e estará disponível em breve. Obrigado pela paciência!',
     'underConstruction.status': 'Em desenvolvimento',
+
+    // Modal de contato
+    'contactme.title': "Entre em Contato",
+    'contactme.subtitle': "Sinta-se à vontade para entrar em contato através destes canais",
+    'contactme.email': "E-mail",
+    'contactme.location': "Localização",
+    'contactme.linkedin': "LinkedIn",
+    'contactme.github': "GitHub",
+    'contactme.orcid': "ORCID",
+    'contactme.copy': "Copiar",
+    'contactme.copied': "Copiado para a área de transferência!",
+    'contactme.visit': "Visitar Perfil"
   },
 };
 
