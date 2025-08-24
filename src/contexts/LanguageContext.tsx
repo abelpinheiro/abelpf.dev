@@ -81,9 +81,9 @@ const translations = {
     'project.knowledgequiz.description': 'A full-featured quiz system with quiz management and analytics on the web and a quiz game on an Android app.',
     'project.knowledgequiz.details': 'The project consists of a central API that serves two fronts: a web dashboard for quiz management and results analysis, and a mobile application where users can play and test their knowledge.',
     
-    'project.robotics101.title': 'Robotics 101 - Path Planning',
-    'project.robotics101.description': 'An interactive website to demonstrate the different algorithms and strategies of Path Planning in robotics.',
-    'project.robotics101.details': 'An educational platform focused on navigation algorithms for autonomous robots. It combines theoretical foundations with visual and practical resources, allowing the user to execute and compare different algorithms interactively.',
+    'project.theroboticscompass.title': 'The Robotic\'s Compass',
+    'project.theroboticscompass.description': 'An interactive website to demonstrate the different algorithms and strategies of Path Planning in robotics.',
+    'project.theroboticscompass.details': 'An educational platform focused on navigation algorithms for autonomous robots. It combines theoretical foundations with visual and practical resources, allowing the user to execute and compare different algorithms interactively.',
 
     'project.onlinephotoshop.title': 'DIP/CV 101 - Online Photoshop',
     'project.onlinephotoshop.description': 'An interactive website showcasing algorithms of Digital Image Processing and Computer Vision.',
@@ -222,9 +222,9 @@ const translations = {
     'project.knowledgequiz.description': 'Um sistema de quiz completo com gerenciamento, análise de dados na web e um jogo de quiz em aplicativo para Android.',
     'project.knowledgequiz.details': 'O projeto consiste em uma API central que serve duas frentes: um painel web para gerenciamento de quizes e análise de resultados, e um aplicativo móvel onde os usuários podem jogar e testar seus conhecimentos.',
 
-    'project.robotics101.title': 'Robótica 101 - Planejamento de Navegação',
-    'project.robotics101.description': 'Um site interativo para demonstrar os diferentes algoritmos e estratégias de Planejamento de Trajetória em robótica.',
-    'project.robotics101.details': 'Plataforma educacional focada em algoritmos de navegação para robôs autônomos. Combina fundamentos teóricos com recursos visuais e práticos, permitindo que o usuário execute e compare diferentes algoritmos interativamente.',
+    'project.theroboticscompass.title': 'O Compasso Robótico',
+    'project.theroboticscompass.description': 'Um site interativo para demonstrar os diferentes algoritmos e estratégias de Planejamento de Trajetória em robótica.',
+    'project.theroboticscompass.details': 'Plataforma educacional focada em algoritmos de navegação para robôs autônomos. Combina fundamentos teóricos com recursos visuais e práticos, permitindo que o usuário execute e compare diferentes algoritmos interativamente.',
 
     'project.onlinephotoshop.title': 'PDI/VC 101 - Photoshop Online',
     'project.onlinephotoshop.description': 'Um site interativo que apresenta algoritmos de Processamento Digital de Imagens e Visão Computacional.',
