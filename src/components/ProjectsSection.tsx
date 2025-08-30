@@ -19,7 +19,7 @@ function ProjectCard({ title, description, tags, imageUrl, onClick }: ProjectCar
         <img 
           src={imageUrl} 
           alt={title}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
           width={600}
           height={340}
         />
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.remotemousecontrol.description",
       detailsKey: 'project.remotemousecontrol.details',
       tags: ["Go", "Android", "Kotlin", "WebSocket"],
-      imageUrl: "https://placehold.co/600x340",
+      imageUrl: "/abelpf.dev/project_remote_mouse_01.jpg",
       githubUrl: "https://github.com/abelpinheiro/mousephoneserver",
       liveUrl: "",
     },
