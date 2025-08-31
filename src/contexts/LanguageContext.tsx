@@ -303,6 +303,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const savedLanguage = localStorage.getItem('language') as Language;
     if (savedLanguage && ['en', 'pt'].includes(savedLanguage)) {
       setLanguage(savedLanguage);
+    } else {
+      const browserLang = navigator.language.split('-')[0];
+      if (browserLang === 'pt'){
+        setLanguage('pt');
+      } else {
+        setLanguage('en')
+      }
     }
   }, []);
 
