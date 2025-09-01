@@ -54,7 +54,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.knowledgequiz.description",
       detailsKey: 'project.knowledgequiz.details',
       tags: ["Android", "Kotlin", "C#", ".NET", "PostgreSQL", "React"],
-      imageUrl: "https://placehold.co/600x340",
+      imageUrls: ["https://placehold.co/600x340"],
       githubUrl: "https://github.com/abelpinheiro/KnowledgeQuiz.Api",
       liveUrl: "https://knowledgequiz-web.pages.dev/",
     },
@@ -63,7 +63,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.theroboticscompass.description",
       detailsKey: 'project.theroboticscompass.details',
       tags: ["React", "TypeScript", "Tailwind CSS"],
-      imageUrl: "https://placehold.co/600x340",
+      imageUrls: ["https://placehold.co/600x340"],
       githubUrl: "https://github.com/abelpinheiro/the-robots-compass",
       liveUrl: "",
     },
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.remotemousecontrol.description",
       detailsKey: 'project.remotemousecontrol.details',
       tags: ["Go", "Android", "Kotlin", "WebSocket"],
-      imageUrl: "/abelpf.dev/project_remote_mouse_01.jpg",
+      imageUrls: ["/abelpf.dev/project_remote_mouse_01.jpg", "/abelpf.dev/project_remote_mouse_02.jpg", "/abelpf.dev/project_remote_mouse_03.jpg"],
       githubUrl: "https://github.com/abelpinheiro/mousephoneserver",
       liveUrl: "",
     },
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.onlinephotoshop.description",
       detailsKey: 'project.onlinephotoshop.details',
       tags: [".NET", "React", "Python"],
-      imageUrl: "https://placehold.co/600x340",
+      imageUrls: ["https://placehold.co/600x340"],
       githubUrl: "",
       liveUrl: "",
     },
@@ -90,7 +90,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.trackinglibrary.description",
       detailsKey: 'project.trackinglibrary.details',
       tags: ["Android", "Kotlin"],
-      imageUrl: "https://placehold.co/600x340",
+      imageUrls: ["https://placehold.co/600x340"],
       githubUrl: "https://github.com/abelpinheiro/TrackingLibraryApp",
       liveUrl: "",
     },
@@ -99,7 +99,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.spaceinvaders.description",
       detailsKey: 'project.spaceinvaders.details',
       tags: [".NET"],
-      imageUrl: "https://placehold.co/600x340",
+      imageUrls: ["https://placehold.co/600x340"],
       githubUrl: "https://github.com/abelpinheiro/SpaceInvaders",
       liveUrl: "",
     },
@@ -108,7 +108,7 @@ export default function ProjectsSection() {
       descriptionKey: "project.3drec.description",
       detailsKey: 'project.3drec.details',
       tags: ["Android", "Kotlin"],
-      imageUrl: "https://placehold.co/600x340",
+      imageUrls: ["https://placehold.co/600x340"],
       githubUrl: "https://github.com/abelpinheiro/3d-reconstruct-app",
       liveUrl: "",
     },
@@ -152,7 +152,7 @@ export default function ProjectsSection() {
               title={t(project.titleKey)}
               description={t(project.descriptionKey)}
               tags={project.tags}
-              imageUrl={project.imageUrl}
+              imageUrl={project.imageUrls[0]}
               onClick={() => handleProjectClick(project)}
             />
           ))}

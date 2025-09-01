@@ -2,6 +2,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Carousel } from "./ui/carousel";
 
 interface ProjectModalProps {
     isOpen: boolean;
@@ -10,7 +11,7 @@ interface ProjectModalProps {
       titleKey: string;
       descriptionKey: string;
       tags: string[];
-      imageUrl: string;
+      imageUrls: string[];
       detailsKey?: string;
       githubUrl?: string;
       liveUrl?: string;
@@ -35,13 +36,9 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
         </DialogHeader>
 
         <div className="space-y-6">
-          {/* Project Image */}
-          <div className="aspect-video overflow-hidden rounded-lg border">
-            <img
-              src={project.imageUrl} 
-              alt={t(project.titleKey)}
-              className="h-full w-full object-cover"
-            />
+          {/* Project Image Carousel*/}
+          <div className="h-80 bg-muted/20 rounded-lg border">
+            <Carousel images={project.imageUrls} objectFit="contain" />
           </div>
 
           {/* Project Details */}
