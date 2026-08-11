@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { asset, cn } from "@/lib/utils";
 import { useRef, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ProjectModal } from "./ProjectModal";
@@ -63,9 +63,13 @@ export default function ProjectsSection() {
       descriptionKey: "project.theroboticscompass.description",
       detailsKey: 'project.theroboticscompass.details',
       tags: ["React", "TypeScript", "Tailwind CSS"],
-      imageUrls: ["https://placehold.co/600x340"],
-      githubUrl: "https://github.com/abelpinheiro/the-robots-compass",
-      liveUrl: "",
+      imageUrls: [
+        asset("project_robotics_compass_01.jpg"),
+        asset("project_robotics_compass_02.jpg"),
+        asset("project_robotics_compass_03.jpg"),
+      ],
+      githubUrl: "https://github.com/abelpinheiro/robotics-compass",
+      liveUrl: "https://robotics-compass.vercel.app/",
     },
     {
       titleKey: "project.remotemousecontrol.title",
@@ -110,6 +114,15 @@ export default function ProjectsSection() {
       tags: ["Android", "Kotlin"],
       imageUrls: ["https://placehold.co/600x340"],
       githubUrl: "https://github.com/abelpinheiro/3d-reconstruct-app",
+      liveUrl: "",
+    },
+    {
+      titleKey: "project.smarthomehub.title",
+      descriptionKey: "project.smarthomehub.description",
+      detailsKey: 'project.smarthomehub.details',
+      tags: ["Go", "MQTT", "TimescaleDB", "Docker"],
+      imageUrls: ["https://placehold.co/600x340"],
+      githubUrl: "https://github.com/abelpinheiro/smarthome-hub",
       liveUrl: "",
     },
   ];

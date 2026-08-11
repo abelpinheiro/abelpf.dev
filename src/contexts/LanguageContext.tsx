@@ -105,6 +105,10 @@ const translations = {
     'project.3drec.description': 'An Android app that uses images and videos to create a 3D scene.',
     'project.3drec.details': 'An Android application that applies Computer Vision algorithms, such as Structure from Motion (SfM), to process a sequence of images or a video and generate a 3D reconstruction of the captured scene.',
 
+    'project.smarthomehub.title': 'SmartHome Hub',
+    'project.smarthomehub.description': 'A modular, self-hosted home automation hub that keeps the house working when the cloud and the internet go down.',
+    'project.smarthomehub.details': 'An event-driven modular monolith written in Go. Devices talk to the hub over MQTT with per-device credentials and ACLs, and telemetry is stored in TimescaleDB. A control authority hierarchy lets manual commands and automation coexist without ever overriding the hardware failsafe, while Go\'s internal packages turn module boundaries into a compile error instead of a code review note.',
+
     // Project Details
     'project.details': 'Project Details',
     'project.technologies': 'Technologies Used',
@@ -245,6 +249,10 @@ const translations = {
     'project.3drec.title': 'Reconstrução de Imagem 3D',
     'project.3drec.description': 'Um aplicativo Android que utiliza imagens e vídeos para criar o cenário em 3D.',
     'project.3drec.details': 'Aplicativo Android que aplica algoritmos de Visão Computacional, como Structure from Motion (SfM), para processar uma sequência de imagens ou um vídeo e gerar uma reconstrução 3D da cena capturada.',
+
+    'project.smarthomehub.title': 'SmartHome Hub',
+    'project.smarthomehub.description': 'Um hub modular e auto-hospedado de automação residencial que mantém a casa funcionando quando a nuvem e a internet caem.',
+    'project.smarthomehub.details': 'Um monolito modular orientado a eventos escrito em Go. Os dispositivos falam com o hub via MQTT, com credenciais e ACLs por dispositivo, e a telemetria é armazenada no TimescaleDB. Uma hierarquia de autoridade de controle permite que comandos manuais e automação coexistam sem nunca sobrepor o failsafe de hardware, enquanto os pacotes internal do Go transformam as fronteiras entre módulos em erro de compilação, e não em observação de code review.',
 
 
     // Project Details
