@@ -76,7 +76,11 @@ export default function ProjectsSection() {
       descriptionKey: "project.remotemousecontrol.description",
       detailsKey: 'project.remotemousecontrol.details',
       tags: ["Go", "Android", "Kotlin", "WebSocket"],
-      imageUrls: ["/abelpf.dev/project_remote_mouse_01.jpg", "/abelpf.dev/project_remote_mouse_02.jpg", "/abelpf.dev/project_remote_mouse_03.jpg"],
+      imageUrls: [
+        asset("project_remote_mouse_01.jpg"),
+        asset("project_remote_mouse_02.jpg"),
+        asset("project_remote_mouse_03.jpg"),
+      ],
       githubUrl: "https://github.com/abelpinheiro/mousephoneserver",
       liveUrl: "",
     },

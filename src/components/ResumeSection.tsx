@@ -1,5 +1,5 @@
 import { ArrowRight, Download } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { asset, cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function ResumeSection() {
@@ -8,7 +8,7 @@ export default function ResumeSection() {
   const handleDownloadResume = () => {
     // Create download link for PDF
     const element = document.createElement('a');
-    element.href = '/resume_abelpf.pdf';
+    element.href = asset('resume_abelpf.pdf');
     element.download = 'resume_abelpf.pdf';
     element.target = '_blank';
     document.body.appendChild(element);
